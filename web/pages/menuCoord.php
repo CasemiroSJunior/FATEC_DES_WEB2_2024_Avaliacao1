@@ -26,7 +26,7 @@ require '../Auth/userTypeValidation.php';
         <div style="background-color: whitesmoke; width: 80%;border: black; border-radius: 8px;" class="p-4">
             <h1>Menu Coordenação</h1>
 
-            <div class="p-4" style="font-size: larger">
+            <div class="p-2" style="font-size: larger">
                 <label for="labs">Laboratório:</label>
                 <br>
                 <select name="labs" id="laboratorio">
@@ -56,7 +56,7 @@ require '../Auth/userTypeValidation.php';
                 <label for="request">Solicitação</label>
             </div>
 
-            <div class="p-4" style="font-size: larger">
+            <div class="p-2" style="font-size: larger">
                 <label for="cursos">Curso:</label>
                 <br>
                 <select name="cursos" id="cursos" style="width: 10%;">
