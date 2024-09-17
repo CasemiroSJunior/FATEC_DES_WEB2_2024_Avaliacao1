@@ -128,7 +128,7 @@
           width="256"
           height="256"
         />
-        <h1 class="h3 mb-3 fw-normal">Clica no meu botão</h1>
+        <h1 class="h3 mb-3 fw-normal">Sistema de Chamados Fatec Araras</h1>
 
         <div class="form-floating">
           <input
@@ -138,7 +138,7 @@
             name="username"
             placeholder="coordenacao ou tecnicos"
           />
-          <label for="username">UseRnaMe</label>
+          <label for="username">Usuário</label>
         </div>
         <div class="form-floating">
           <input
@@ -148,11 +148,14 @@
             name="password"
             placeholder="Password"
           />
-          <label for="password">senHa</label>
+          <label for="password">Senha</label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">
-          Penetrar no site
+          Entrar
         </button>
+        <a class="btn btn-warning w-100 py-2 mt-2" href="./pages/requestGeral.php">
+          Ver solicitações
+        </a>
         <p class="mt-5 mb-3 text-body-secondary">&copy; set/2024-set/2024</p>
       </form>
     </main>

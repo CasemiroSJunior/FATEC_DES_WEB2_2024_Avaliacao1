@@ -1,7 +1,7 @@
 <?php
 $serverConfig = require '../Auth/userTypeValidation.php';
 $serverConfig . startSession();
-if ($serverConfig . getPermission() == false) {
+if ($serverConfig . getPermission() == "1") {
     header("location: /prova/FATEC_DES_WEB2_2024_Avaliacao1/web/index.php");
 }
 
