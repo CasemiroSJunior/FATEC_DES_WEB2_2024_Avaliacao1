@@ -1,5 +1,7 @@
 <?php 
-  require 'Auth/userTypeValidation.php';
+  $serverConfig = require './Auth/userTypeValidation.php';
+  $serverConfig.startSession();
+  $serverConfig.login();
 ?>
 
 <!DOCTYPE html>

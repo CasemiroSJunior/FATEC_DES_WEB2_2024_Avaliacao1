@@ -1,6 +1,13 @@
 <?php
-require '../Auth/userTypeValidation.php';
-/* require '../Auth/auth.php'; */
+$serverConfig = require '../Auth/userTypeValidation.php';
+$serverConfig . startSession();
+print_r($serverConfig . getPermission());
+if ($serverConfig . getPermission() == '1tecnicos') {
+    header("location: /prova/FATEC_DES_WEB2_2024_Avaliacao1/web/pages/menuTec.php");
+} else if ($serverConfig . getPermission() == false) {
+    header("location: /prova/FATEC_DES_WEB2_2024_Avaliacao1/web/index.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,10 +71,13 @@ require '../Auth/userTypeValidation.php';
                     <option value="DSM">DSM</option>
                 </select>
             </div>
-            
             <div class="p-2">
                 <button type="submit" class="btn btn-success p-2">Enviar</button>
-                <button class="btn btn-danger p-2" href="../Auth/logout.php">Logout</button>
+            </div>
+            
+            <div class="p-2">
+                <a class="btn btn-warning p-2" href="./menuTec.php">Ver solicitações</a>
+                <a class="btn btn-danger p-2" href="../Auth/logout.php">Logout</a>
             </div>
         </div>
     </form>
