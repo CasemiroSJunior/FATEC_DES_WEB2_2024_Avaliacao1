@@ -45,7 +45,7 @@ $cursos = ['GE', 'DSM'];
                     }
                 }
                 if(!isset($file) || $file == false){
-                    echo "<h2>Nenhuma solicitação encontrada de </h2>". $curso;
+                    echo "<h2>Nenhuma solicitação encontrada de ". $curso . "</h2>";
                 }
                 
             }
