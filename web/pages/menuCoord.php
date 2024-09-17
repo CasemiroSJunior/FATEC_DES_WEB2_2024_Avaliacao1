@@ -3,9 +3,9 @@ $serverConfig = include '../Auth/userTypeValidation.php';
 $serverConfig.startSession();
 print_r($serverConfig.getPermission());
 if ($serverConfig . getPermission() == '1tecnicos') {
-    header("location: /prova/FATEC_DES_WEB2_2024_Avaliacao1/web/pages/menuTec.php");
+    header("location: pages/menuTec.php");
 } else if ($serverConfig . getPermission() == "1") {
-    header("location: /prova/FATEC_DES_WEB2_2024_Avaliacao1/web/index.php");
+    header("location: pages/index.php");
 }
 
 ?>
